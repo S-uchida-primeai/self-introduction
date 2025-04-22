@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
+<html lang="ja">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>内田空音 | 自己紹介サイト</title>		
+		<link rel="icon" href="img/character_sports_soccer.png">
+		<link rel="stylesheet" href="css/style.css">		
+	</head>
+		
+	<body>
+		<header>
+			<h1>自己紹介サイト</h1>
+			<nav>
+				<ul>
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#history">経歴</a></li>
+					<li><a href="#contact">	お問い合わせ</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<!--スライドショー-->
+			<div class="slideshow">
+				<!--1枚目の指定-->
+				<div class="slide active">
+				<div class="slide-text">
+					<h2>成長記録</h2>
+				</div>
+				</div>
+				<div class="slide"><img src="img/Screenshot_20250419_175256_Gallery.jpg" alt="画像2"></div>
+				<div class="slide"><img src="img/1000001524.jpg" alt="画像3"></div>
+				<div class="slide"><img src="img/1728907914238.jpg" alt="画像4"></div>
+				<div class="slide"><img src="img/1728908857707.jpg" alt="画像5"></div>
+				<div class="slide"><img src="img/PIC000063.jpg" alt="画像6"></div>								
+				<div class="slide"><img src="img/PIC000093.jpg" alt="画像7"></div>
+				<div class="slide"><img src="img/1565436849056.jpg" alt="画像8"></div>
+				<div class="slide"><img src="img/1727695766871.jpg" alt="画像9"></div>	
+				</div>
+				
+				<!--スライドショーのボタン-->
+				<div class="controls">
+				<button class="btn" id="prev">←</button>
+				<button class="btn" id="next">→</button>
+			    </div>
+			
+			<!--プロフィール-->
+			<section id="profile" class="wrapper">
+				<h3>Profile</h3>
+				<!--strongのタグで太字にする-->
+				<p><strong>名前 : </strong> 内田空音(うちだそらん）</p>
+				<p><strong>生年月日 : </strong>2002/11/05</p>
+				<p><strong>出身地 : </strong>東京都</p>
+				<p><strong>趣味 : </strong>体を動かすこと</p>
+				<p><strong>好きなこと : </strong>サッカーをすること</p>
+			</section>
+			
+			<!--経歴-->
+			<section id="history" class="wrapper">
+				<h3>経歴</h3>
+				<p><strong>2018年 </strong>昌平高校</p>
+				<p><strong>2021年 </strong>明海大学</p>
+				<p><strong>2025年 </strong>株式会社プライム・アイ</p>
+			</section>
+				
+			<!--お問い合わせフォーム-->	
+			<section id="contact" class="wrapper">
+				<h3>お問い合わせ</h3>
+				<p>なにかありましたらこちらまで</p>
+				<p><strong>メール :</strong>s.uchida@prime-ai.co.jp</p>
+				<form id="contact-form">
+					<!--required = 空のままだと送れない-->
+					<input type="email" name="email" id="email" placeholder="メールアドレス" required>
+					<textarea name="message" id="messageText" placeholder="メッセージを入力してください" rows="5" required></textarea>
+					<button type="submit">送信</button>
+				</form>
+				<p id="message"></p>
+			</section>
+		
+		</main>
+		
+		<script src="js/script.js"></script>	
+	</body>
 </html>
